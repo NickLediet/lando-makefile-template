@@ -1,6 +1,7 @@
 name: my-lando-site # RENAME
 recipe: drupal8 # Use any recipe you want
 config:
+  webroot: . # Path to whereever your docroot is
   # USE THESE WITH THE PANTHEON RECIPE
   # index: false
   # Disable the VARNISH edge
