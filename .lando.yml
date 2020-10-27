@@ -1,0 +1,19 @@
+name: my-lando-site # RENAME
+recipe: drupal8 # Use any recipe you want
+config:
+  # USE THESE WITH THE PANTHEON RECIPE
+  # index: false
+  # Disable the VARNISH edge
+  # edge: false
+  # Disable the REDIS cache
+  # cache: false
+
+services:
+  node:
+    type: node
+
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
